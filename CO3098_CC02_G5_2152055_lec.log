@@ -1,0 +1,90 @@
+                          CONFORMAL (R)
+                   Version 20.10-p100 (01-May-2020) (64 bit executable)
+   Copyright (c) Cadence Design Systems, Inc., 1997-2019. All Rights Reserved
+
+
+This program is proprietary and confidential information belonging to
+Cadence Design Systems, Inc., and may be used and disclosed only as authorized
+in a license agreement controlling such use and disclosure.
+
+// Warning: This version is 1432 days old. You can download the latest version from http://downloads.cadence.com.
+
+0
+CPU time     : 1.00    seconds
+Elapse time  : 28      seconds
+Memory usage : 260.42  M bytes
+// Command: read_library slow.lib -lib -revised
+// Parsing file slow.lib ...
+// Warning: (RTL9.17) Cell doesn't have any output pins or all output pins are undriven (blackboxed) (occurrence:1)
+// Note: (RTL9.26) Liberty pin with internal_node use default input_map (occurrence:16)
+// Note: Read Liberty library successfully
+0
+CPU time     : 1.34    seconds
+Elapse time  : 30      seconds
+Memory usage : 278.04  M bytes
+// Command: read_design boundFlasher.v -verilog -golden
+// Parsing file boundFlasher.v ...
+// Golden root module is set to 'boundFlasher'
+// Warning: (RTL1.2) Variable/signal is assigned by multiple non-blocking assignments (occurrence:15)
+// Warning: (RTL1.5b) Potential loss of RHS msb or carry-out bit (occurrence:7)
+// Warning: (RTL3.1) Variable/signal is unassigned in asynchronous set/reset (occurrence:1)
+// Warning: (RTL5.3) Case expressions/items are resized (occurrence:1)
+// Warning: (RTL23) Flop with asynchronous hold might cause non-equivalence with synthesized netlist (occurrence:1)
+// Warning: (DIR6.1) Ignored compiler directive is detected (occurrence:1)
+// Warning: (IGN1.1) Initial construct is not supported. The entire initial construct will be ignored (occurrence:2)
+// Note: Read VERILOG design successfully
+0
+CPU time     : 1.49    seconds
+Elapse time  : 34      seconds
+Memory usage : 285.07  M bytes
+// Command: read_design boundFlasher_m.v -verilog -revised
+// Parsing file boundFlasher_m.v ...
+// Revised root module is set to 'boundFlasher'
+// Note: Read VERILOG design successfully
+0
+CPU time     : 1.61    seconds
+Elapse time  : 36      seconds
+Memory usage : 290.65  M bytes
+// Command: set_mapping_method -name only
+0
+// Command: set_system_mode lec
+// Processing Golden ...
+// Modeling Golden ...
+// Processing Revised ...
+// Modeling Revised ...
+CPU time     : 1.91    seconds
+Elapse time  : 42      seconds
+Memory usage : 317.85  M bytes
+// Mapping key points ...
+================================================================================
+Mapped points: SYSTEM class
+--------------------------------------------------------------------------------
+Mapped points     PI     PO     DFF       Total   
+--------------------------------------------------------------------------------
+Golden            3      16     51        70      
+--------------------------------------------------------------------------------
+Revised           3      16     51        70      
+================================================================================
+0
+// Command: map_key_points
+// Mapping key points ...
+================================================================================
+Mapped points: SYSTEM class
+--------------------------------------------------------------------------------
+Mapped points     PI     PO     DFF       Total   
+--------------------------------------------------------------------------------
+Golden            3      16     51        70      
+--------------------------------------------------------------------------------
+Revised           3      16     51        70      
+================================================================================
+0
+// Command: add_compared_points -all
+// 67 compared points added to compare list
+0
+// Command: compare
+================================================================================
+Compared points      PO     DFF       Total   
+--------------------------------------------------------------------------------
+Equivalent           16     51        67      
+================================================================================
+0
