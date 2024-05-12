@@ -1,7 +1,7 @@
 # Bound Flasher Project
 
 ## Overview
-The Bound Flasher is a Verilog-based project designed to demonstrate a 16-lamp system where lamps are controlled to flicker in a defined pattern. The project is built using RTL code and simulates the sequential lighting and dimming of LEDs, controlled by clock, flick, and reset signals.
+The "Bound Flasher" project showcases a 16-lamp display system, meticulously engineered using Verilog and synthesized with Cadence tools to ensure optimal performance. This design utilizes a state machine to control the sequential lighting and dimming of lamps based on input signals. Additionally, Logic Equivalence Checking (LEC) confirms that the final netlist maintains functional integrity with the original RTL, ensuring the system operates as specified without errors.
 
 ## Features
 - **Initial State**: All lamps are initially OFF.
